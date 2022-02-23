@@ -1,0 +1,1007 @@
+html, body {
+    margin: 0;
+    padding:0;
+}
+body {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    background-color: #f1efef;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navWrapper {
+    padding: 2rem 2%;
+    display: flex;
+    height: 3rem;
+}
+
+.menuIcon-Container {
+    display: none;
+}
+
+.closeMenu-Container {
+    display: none;
+}
+
+.logoWrapper {
+    flex-basis: 8rem;
+    height: 8rem;
+    background-color: #221616;
+    position: relative;
+    top: -2rem;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.logoName {
+    font-size: .7rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 3.4rem;
+    display: flex;
+    flex-direction: column;
+}
+.BonvoyName {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.BonvoyName span {
+    font-size: .9rem;
+    position: relative;
+    bottom: 5px;
+    border-bottom:solid #EA870B 2px;
+}
+
+.mainNavBar {
+    font-size: .85rem;
+    font-weight: 600;
+    margin: 1.1rem 0 0 1.1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: start;
+    padding-top: 1.5rem;
+}
+
+.mainNavLink {
+    margin-left: 3%;
+}
+
+.smallTop-linksContainer {
+    font-weight: 100;
+    font-size: .8rem;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 16rem;
+    margin-right: 2%;
+}
+
+.Banner {
+    font-family: 'Bebas Neue', cursive;
+    height: 30rem;
+    background-image: url("images/Banner-large(2400x1600).jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.BannerMainWrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 8rem 0 0 2%;
+}
+
+.BannerMainTitle {
+    font-size: 3.8rem;
+    letter-spacing: .3rem;
+    color: white;
+    text-shadow: 0px 0px 3px black;
+    text-transform: uppercase;
+}
+
+.learnMore-link {
+    opacity: 1;
+}
+
+.learnMore-link {
+    width: 7rem;
+    height: 2.3rem;
+    font-size: 1.2rem;
+    color: white;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,.4);
+    border: 1px white solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 0 2%;
+}
+
+.findHotelsWrapper {
+    background-color: white;
+    padding: 2.5rem 2rem;
+    font-size: .8rem;
+    max-width: 100%;
+    position: relative;
+    top: -2rem;
+    box-shadow: 0 0px 6px 4px rgba(0,0,0,.15);
+}
+
+.initialSearchInput-Wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.destinationInnerWrapper,
+.datesInnerWrapper,
+.topFind-Btn {
+    width: 32%;
+}
+
+label[for="destination"] {
+    display:block;
+}
+
+#destination {
+    box-sizing: border-box;
+    width: 100%;
+    padding: .5rem .8rem;
+}
+
+.datesInnerWrapper {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.dates-nights-labels {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dates-inputs {
+    display: flex;
+}
+
+.dates-inputs input[type="text"] {
+    width: 50%;
+    padding: .5rem .8rem;
+}
+
+.moreSearchInput-Wrapper {
+    display: none;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1rem;
+    height: 3.5rem;
+}
+
+.findHotels-Btn {
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 0;
+    height: 2.2rem;
+}
+
+.topFind-Btn {
+    align-self: flex-end;
+}
+
+.bottomFind-Btn {
+    display: none;
+}
+
+.moreSearchInput-Wrapper div {
+    width: 32%;
+}
+.roomGuests-Box {
+    display: flex;
+    flex-flow: row wrap;
+}
+.roomGuests-InnerWrapper {
+    display: block;
+    flex-basis: 100%;
+}
+.roomGuests-input {
+    display: block;
+    box-sizing: border-box;
+    border: black .5px solid;
+    background-color: white;
+    padding: .5rem .8rem;
+    width: 100%;
+}
+.roomGuestsDetail-Box {
+    display: none;
+    flex-basis: 100%;
+    background-color: white;
+    box-shadow: 0 0px 6px 1px rgba(0,0,0,.15);
+    border-radius: 0 0 5px 5px;
+    padding: 1rem;
+    position: relative;
+}
+.roomGuestsDetail-Box div {
+    width: 100%;
+    margin-bottom: .5rem;
+}
+.roomGuestsDetail-Box label {
+    font-size: .7rem;
+}
+.roomGuestsDetail-Box input {
+    box-sizing: border-box;
+    padding: 0 .5rem;
+    width: 100%;
+    height: 3rem;
+}
+.roomGuestsDetail-Box a {
+    border: 1.8px solid rgba(0,0,0,.4);
+    margin-top: .7rem;
+    padding: .1rem .6rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+}
+.roomGuestsDetail-Box a[class^="minus"] {
+    position: absolute;
+    right: 95px;
+}
+.roomGuestsDetail-Box a[class^="add"] {
+    position: absolute;
+    right: 40px;
+}
+.specialRates-Box {
+    display: flex;
+    flex-flow: row wrap;
+}
+.SR-innerWrapper {
+    flex-basis: 100%;
+}
+
+.SR-innerWrapper input {
+    box-sizing: border-box;
+}
+
+.specialRates-Options {
+    display: none;
+    width: 100%;
+    background-color: whitesmoke;
+    box-shadow: 0 0px 6px 1px rgba(0,0,0,.15);
+    border-radius: 0 0 5px 5px;
+    margin: 0;
+    list-style-type: none;
+    padding: 1rem 1.5rem;
+    position: relative;
+}
+
+.specialRates-Options li {
+    font-weight: bold;
+    background-color: rgba(231, 233, 234, 1);
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.specialRates-Options li:hover {
+    background-color: #EA870B;
+} 
+
+#special-rates {
+    border: black .5px solid;
+    background-color: white;
+    padding: .5rem .8rem;
+    width: 100%;
+}
+
+.usePoints-Box {
+    display: flex;
+    align-items: center;
+}
+
+#use-points-cert {
+    width: 20px;
+    height: 20px;
+}
+
+.attractionInner-Wrapper h2{
+    text-align: center;
+}
+
+.attraction-List {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.attraction-List a {
+    color:rgb(243, 106, 91);
+}
+
+.attraction-List li {
+    width: 25%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.joinNowInner-Wrapper {
+    padding: 1rem 3rem;
+    background-color: #221616;
+    color: white;
+    height: 16rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.whyJoin {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.whyJoin sup {
+    font-size: .7rem;
+}
+
+.signIn-Link {
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px white solid;
+    height: 2.4rem;
+    width: 7rem;
+    color: black;
+    padding: .5rem 1rem;
+    font-weight: 500;
+}
+
+.joinNow-Link {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 2.4rem;
+    width: 7rem;
+    border: 1px white solid;
+    color:white;
+    padding: .5rem 1rem;
+    font-weight: 500;
+}
+
+.topOffersWrapper {
+    margin: 2rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.topOffersWrapper h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.topOffers-Container{
+    width: 23.5%;
+    height: 18rem;
+    background-color: white;
+    box-shadow: 0 0px 6px 2px rgba(0,0,0,.15);
+}
+
+.topOffer-imgContainer{
+    width: 100%;
+    height: 10rem;
+    overflow: hidden;
+}
+
+.topOffer-imgContainer img{
+    max-width: 100%;
+    height: auto;
+}
+
+.large-imgContainer {
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+}
+
+.large-imgContainer img, 
+.large-imgContainer img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -6rem;
+}
+
+.topOffersWrapper div:nth-child(6), 
+.topOffersWrapper div:nth-child(7) {
+    width: 48.9%;
+    height: 23rem;
+    margin-top: 2rem;
+}
+
+.topOffers-captionContainer {
+    width: 100%;
+    height: 6.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topOffers-Container p {
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.topOffers-Container a {
+    padding: 0 1rem;
+    font-size: .8rem;
+    color:red;
+}
+
+.view-offers-Container {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-offers-Container a {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: .5rem 1rem;
+    background-color: white;
+    box-shadow: 0 0px 6px 2px rgba(0,0,0,.15);
+}
+.marriott-app {
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 8rem;
+    box-shadow: 0 0px 6px 2px rgba(0,0,0,.15);
+}
+.app-imgContainer {
+    min-width: 10rem;
+    overflow: hidden;
+}
+.app-imgContainer img {
+    max-width: 7rem;
+    height: auto;
+    position: relative;
+    top: 8px;
+    left: 20px;
+    transform: rotate(20deg);
+}
+.appAds-Content {
+    padding: 2rem 10% 2rem 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.appAds-Content p {
+    margin: auto auto auto 2rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.appAds-Content a {
+    border: 1px solid black;
+    align-self: flex-end;
+    padding: .5rem 1.2rem;
+    margin-top: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 8rem;
+}
+.careerAds {
+    box-sizing: border-box;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    height: 8rem;
+    margin-top: 2rem;
+    box-shadow: 0 0px 6px 2px rgba(0,0,0,.15);
+}
+.careerAds-imgContainer {
+    min-width: 10rem;
+    overflow: hidden;
+}
+.careerAds-imgContainer img {
+    max-width: 10rem;
+    height: auto;
+    position: relative;
+    top: -15px;
+}
+.careerAds-Content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 10% 2rem 10%;
+    width: 100%;
+}
+.careerAds-Content p:nth-child(1){
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+}
+.careerAds-Content p:nth-child(2){
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.careerAds a {
+    border: 1px solid white;
+    padding: .5rem 1.2rem;
+    width: 8rem;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    align-self: flex-end;
+    margin-top: .8rem;
+}
+
+footer {
+    padding: 2rem 2%;
+    margin-top: 4rem;
+    background-color: white;
+}
+
+.topDestinationsWrapper {
+    border-bottom: 1px solid rgb(180, 176, 176);
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.forGuestWrapper {
+    border-bottom: 1px solid rgb(180, 176, 176);
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.ourCompanyWrapper {
+    border-bottom: 1px solid rgb(180, 176, 176);
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.socialMediaWrapper {
+    margin-top: 1rem;
+    font-size: .9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.socialMediaWrapper div {
+    margin-left: 1rem;
+    width: 12rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyRightWrapper {
+    margin-top: 1.5rem;
+    font-size: .7rem;
+}
+
+.site-use-links ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style-type: none;
+    font-size: .7rem;
+    padding: 0;
+}
+
+.site-link {
+    margin-right: 16px;
+}
+
+
+@media (max-width: 800px) {
+
+    .menuIcon-Container {
+        display: block;
+        margin-left: 3%;
+        position: relative;
+        top: 1rem;
+    }
+
+    .menuIcon-Container img {
+        padding: .5rem;
+        border: 1px solid rgba(117, 119, 130, 0.86);
+        border-radius: 5px;
+    }
+
+    .closeMenu-Container {
+        display: none;
+        margin-left: 3%;
+        position: relative;
+        top: 1rem;
+    }
+    .closeMenu-Container img {
+        padding: .5rem;
+        border: 1px solid rgba(117, 119, 130, 0.86);
+        width: 24px;
+        height: auto;
+        border-radius: 5px;
+    }
+    .logoWrapper {
+        flex-basis: 6.5rem;
+        height: 7rem;
+        margin-left: 3%;
+        z-index: 3;
+    }    
+    .smallTop-linksContainer {
+        margin: 2.4rem 3% 0;
+        width: 7rem;
+    }
+    .smallTop-linksContainer img{
+        width: 18px;
+        height: auto;
+    }
+    .smallTop-linksContainer span{
+        display: none;
+    }
+    .navWrapper {
+        padding: 1rem 0;
+    }
+    .mainNavBar {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 95%;
+        height: 25rem;
+        position: absolute;
+        top: 3.9rem;
+        left: -.5rem;
+        background-color: white;
+        z-index: 2;
+        padding: 4rem 0;
+        border-radius: 0 0 8px 8px;
+        box-shadow: 0 2px 2px 1px rgba(149, 149, 154, 0.8);
+    }
+    .mainNavLink {
+        border-bottom: 1px solid rgba(149, 149, 154, 0.8);
+        margin: 0 2rem;
+    }
+    .BannerMainWrapper {
+        padding: 4rem 0 0 3%;
+    }
+    .Banner {
+        height: 15rem;
+        background-size: cover;
+        background-position: top -30px left 0;
+    }
+    .BannerMainTitle {
+        font-size: 2rem;
+    }   
+    .learnMore-link {
+        width: 5.5rem;
+        height: 1.5rem;
+        font-size: .9rem;
+        letter-spacing: 1.2px;
+        border: .5px white solid;
+    }
+    main {
+        padding: 0;
+    }
+    .findHotelsWrapper {
+        padding: .9rem 3%;
+        font-size: .9rem;
+    }
+    .initialSearchInput-Wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .destinationInnerWrapper,
+    .datesInnerWrapper
+     {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .moreSearchInput-Wrapper {
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 0;
+        height: 12rem;
+    }
+    .moreSearchInput-Wrapper div {
+        width: 100%;
+        margin-bottom: .5rem;
+    }
+    .roomGuests-Box {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .roomGuestsDetail-Box {
+        box-sizing: border-box;
+        position: absolute;
+        top: -10rem;
+        left: 0;
+        right: 0;
+        height: 120%;
+        box-shadow: 0 30px 10px 10px rgba(100, 85, 69, 1);
+    }
+
+    .roomGuestsDetail-Box div {
+        margin-bottom: 2rem;
+    }
+
+    .applyRoomGuests button{
+        display: block;
+        padding: .5rem 2rem;
+        margin: 0 auto;
+        border-radius: 10px;
+        color: white;
+        background-color: rgba(55, 56, 59, 1);
+    }
+
+    .close-roomGuestDetails {
+        display: flex;
+        justify-content: flex-end;
+        margin: 1rem 0 0;
+    }
+    .close-roomGuestDetails img {
+        width: 24px;
+        border: 1px solid rgba(149, 149, 154, 0.8); 
+        padding: .5rem;
+        border-radius: 50px;
+        margin-right: 0;
+    }
+    .topFind-Btn {
+        display: none;
+    }
+    .bottomFind-Btn {
+        display: flex;
+        font-size: .9rem;
+        width: 32%;
+        height: 2rem;
+        justify-content: center;
+        align-items: center;
+        margin: .5rem auto;
+    }
+
+    .specialRates-Options {
+        box-sizing: border-box;
+        position: absolute;
+        bottom: -160px;
+        left: 0;
+        right: 0;
+        box-shadow: 0 20px 10px 10px rgba(100, 85, 69, 1);
+    }
+
+    .attractionInner-Wrapper h2 {
+        width: 14rem;
+        text-align: center;
+        margin: 0 auto 1.5rem;
+        font-size: 1.4rem;
+    }
+    .attraction-List {
+        display: flex;
+        flex-direction: column;
+    }
+    .attraction-List li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        padding-bottom: 1rem;
+    }
+    .joinNowInner-Wrapper {
+        padding: .8rem 2rem;
+        height: 13rem;
+        margin-top: 2rem;
+    }
+    .midLogoName {
+        margin-top: .7rem;
+    }
+    .whyJoin {
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin: 1.5rem 0;
+    }
+    .whyJoin sup {
+        font-size: .6rem;
+    }
+    .signIn-Link {
+        height: 2.1rem;
+        width: 5.5rem;
+        padding: .5rem .5rem;
+        font-size: .7rem;
+    }
+    .joinNow-Link {
+        height: 2.1rem;
+        width: 5.5rem;
+        padding: .5rem .5rem;
+        font-size: .7rem;
+    }
+    .topOffersWrapper {
+        margin: 1rem 0;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .topOffers-Container{
+        width: 80%;
+        height: 18rem;
+        margin-top: 1rem;
+    }
+    .topOffer-imgContainer{
+        width: 100%;
+        height: 12rem;
+        overflow: hidden;
+    }
+    .topOffersWrapper div:nth-child(6), 
+    .topOffersWrapper div:nth-child(7) {
+        width: 80%;
+        height: 18rem;
+        margin-top: 1rem;
+    }
+    .large-imgContainer {
+        width: 100%;
+        height: 12rem;
+        overflow: hidden;
+    }
+    .large-imgContainer img {
+        position:static;
+    }
+    .topOffers-captionContainer {
+        width: 100%;
+        height: 5.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .topOffers-Container p {
+        padding: 0 1rem;
+        font-size: .9rem;
+        font-weight: 500;
+        margin: .9rem 0 .4rem;
+    }
+    .marriott-app {
+        display: flex;
+        justify-content: space-around;
+        height: 8rem;
+    }
+    .appAds-Content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 1.4rem 0 .8rem;
+    }
+    .app-imgContainer {
+        min-width: 8rem;
+        overflow: hidden;
+    }
+    .app-imgContainer img {
+        max-width: 7rem;
+        position: relative;
+        top: 10px;
+        left: 10px;
+        transform: rotate(0);
+    }
+    .appAds-Content p {
+        margin: 0;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+    .appAds-Content a {
+        margin: 1.1rem 0 0;
+        padding: 0;
+        text-align: center;
+        font-weight: 700;
+        font-size: .8rem;
+        width: 6.5rem;
+        align-self: flex-end;    
+    }
+    .careerAds {
+        display: flex;
+        justify-content: flex-start;
+        height: 8rem;
+        margin-top: 1rem;
+    }
+    .careerAds-imgContainer {
+        max-width: 7.5rem;
+        overflow: hidden;
+        flex: 0 0 7.5rem;
+    }
+    .careerAds-imgContainer img {
+        max-width: 7.5rem;
+        height: auto;
+        position: relative;
+        top: -12px;
+        left: 10px;
+    }
+    .careerAds-Content {
+        display: flex;
+        flex-direction: column;
+        padding: 1.8rem 1.4rem 1.5rem 0;
+        width: 100%;
+    }   
+    .careerAds-Content p:nth-child(1){
+        font-size: 1rem;
+        font-weight: 700;
+        margin: 0;
+    } 
+    .careerAds-Content p:nth-child(2){
+        font-size: .8rem;
+        font-weight: 500;
+        margin: .5rem 0 0 0;
+    } 
+    .careerAds a {
+        padding: 0 .8rem;
+        font-size: .8rem;
+        width: 7rem;
+        align-self: flex-end;
+        text-align: center;
+    }
+    footer {
+        padding: 1rem 3%;
+    } 
+    .site-use-links ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style-type: none;
+        font-size: .7rem;
+        padding: 0;
+    }   
+    .site-link::after {
+        content: ".";
+    }  
+        
+}
+
+
+@media (min-width: 1480px) {
+    .smallTop-linksContainer {
+        margin-right: 15%;
+    }
+    .navWrapper {
+        padding: 2rem 15% 2rem;
+    }
+    .BannerMainWrapper {
+        padding: 8rem 0 0 15%;
+    }
+    main {
+        padding: 0 15%;
+    }
+    footer {
+        padding: 2rem 15%;
+    }
+}
+
+.show {
+    display: block;
+}
+
+.show-flex {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+.disabled {
+    background-color: rgba(219, 216, 217, 0.5);
+    opacity: .4;
+}
