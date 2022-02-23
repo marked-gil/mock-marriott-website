@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;400;500;700&family=Oswald:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class=navWrapper>
+            <div class="menuIcon-Container">
+                <img src="images/menu-icon.png" alt="">
+            </div>
+            <div class="closeMenu-Container">
+                <img src="images/cancel-icon-64.png" alt="">
+            </div>
+            <div class="logoWrapper">
+                <b class="logoName">Marriot <span class="BonvoyName">Bonv<span>o</span>y</span></b>
+            </div>
+            <div class="mainNavBar">
+                <a href="" class="mainNavLink">Find & Reserve</a>
+                <a href="" class="mainNavLink">Special Offers</a>
+                <a href="" class="mainNavLink">Vacations</a>
+                <a href="" class="mainNavLink">Our Brands</a>
+                <a href="" class="mainNavLink">Our Credit Cards</a>
+                <a href="" class="mainNavLink">About Marriot Bonvoy</a>
+            </div>
+            <div class="smallTop-linksContainer">
+                <a href="">
+                    <img src="images/language-24.png" alt="">
+                    <span>English</span>
+                </a>
+                <a href="">
+                    <img src="images/help-24.png" alt="">
+                    <span>Help</span>
+                </a>
+                <a href="">
+                    <img src="images/traveler-24.png" alt="">
+                    <span>My Trips</span>
+                </a>
+                <a href="">
+                    <img src="images/icons-user-24.png" alt="">
+                    <span>Sign In or Join</span>
+                </a>
+            </div>
+        </nav>
+        <section class="Banner">
+            <div class="BannerMainWrapper">
+                <b class="BannerMainTitle">Explore Our Brands</b>
+                <a href="" class="learnMore-link">Learn More</a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="findHotelsWrapper">
+            <form action="">
+                <div class="initialSearchInput-Wrapper">
+                    <div class="destinationInnerWrapper">
+                        <label for="destination">Destination</label>
+                        <input type="text" id="destination" placeholder="City, airport, attraction or address">
+                    </div>
+                    <div class="datesInnerWrapper">
+                        <div class="dates-nights-labels">
+                            <span class="date-label">Dates</span>
+                            <span class="nights-label">1 Night</span>
+                        </div>
+                        <div class="dates-inputs">
+                            <input type="text" name="date-start" id="dateStart" placeholder="Check-in">
+                            <input type="text" name="date-end" id="dateEnd" placeholder="Check-out">
+                        </div>
+                    </div>
+                    <button class="findHotels-Btn topFind-Btn" type="button">Find Hotels</button>
+                </div>
+
+                <div class="moreSearchInput-Wrapper">
+                    <div class="roomGuests-Box">
+                        <div class="roomGuests-InnerWrapper">
+                            <span class="roomGuests-label">Rooms & Guests</span>
+                            <a href="#" class="roomGuests-input">1 Room: 1 Adult, 1 Child</a>
+                        </div>
+
+                        <div class='roomGuestsDetail-Box'>
+                            <div class="close-roomGuestDetails">
+                                <img class="close-RGDetails" src="images/cancel-icon-64.png" alt="">
+                            </div>
+                            <div class="howManyRooms">
+                                <label for="rooms">Rooms</label>
+                                <input type="text" name="rooms" id="rooms">
+                                <a href="#" class="minus-room">&#8211</a>
+                                <a href="#" class="add-room">+</a>
+                            </div>
+                            <div class="howManyAdults">
+                                <label for="adults">Adults (Maximum: 8 total guests/room)</label>
+                                <input type="text" name="adults" id="adults">
+                                <a href="#" class="minus-adult">&#8211</a>
+                                <a href="#" class="add-adult">+</a>
+                            </div>
+                            <div class="howManyChildren">
+                                <label for="children">Children (Maximum: 8 total guests/room)</label>
+                                <input type="text" name="children" id="children">
+                                <a href="#" class="minus-child">&#8211</a>
+                                <a href="#" class="add-child">+</a>
+                            </div>
+                            <div class="applyRoomGuests">
+                                <button class="applyRG-btn" type="button">APPLY</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="specialRates-Box">
+                        <div class="SR-innerWrapper">
+                            <label for="special-rates">Special Rates</label>
+                            <input type="text" name="special-rates" id="special-rates">
+                        </div>
+                        <ul class="specialRates-Options">
+                            <li id="NOSpR">None</li>
+                            <li id="GovMilSpR">Government & Military</li>
+                            <li id="AAASpR">AAA / CAA</li>
+                            <li id="SeniorSpR">Senior Discount</li>
+                            <li id="PromoSpR">Corporate / Promo / Set#</li>
+                        </ul>
+                    </div>
+
+                    <div class="usePoints-Box">
+                        <input type="checkbox" name="use-points-cert" id="use-points-cert">
+                        <label for="use-points">Use Points / Certificates</label>
+                    </div>
+                </div>
+                <button class="findHotels-Btn bottomFind-Btn">Find Hotels</button>
+            </form>
+        </section>
+        <section class="attractionWrapper">
+            <div class="attractionInner-Wrapper">
+                <h2>Travel with Peace of Mind</h2>
+                <ul class="attraction-List">
+                    <li><img src="https://img.icons8.com/material-outlined/48/000000/ok--v1.png" /><a href="">Best Rate
+                            Guarantee</a></li>
+                    <li><img src="https://img.icons8.com/material-outlined/48/000000/clock--v1.png" /><a
+                            href="">Flexible Cancellation</a></li>
+                    <li><img src="https://img.icons8.com/material-outlined/48/000000/spa-flower.png" /><a
+                            href="">Commitment to Clean</a></li>
+                    <li><img src="https://img.icons8.com/material-outlined/48/000000/phone-office.png" /><a
+                            href="">Contactless Service</a></li>
+                </ul>
+            </div>
+            <div class="joinNowInner-Wrapper">
+                <b class="logoName midLogoName">Marriot <span class="BonvoyName">Bonv<span>o</span>y</span></b>
+                <p class="whyJoin">Marriot Bonvoy<sup>TM</sup> Member Rates. Our lowest rates. All the time.</p>
+                <a href="" class="signIn-Link">Sign In</a>
+                <a href="" class="joinNow-Link">Join Now</a>
+            </div>
+        </section>
+        <section class="topOffersWrapper">
+            <h2>This Week's Top Offers</h2>
+            <div class="topOffers-Container">
+                <div class="topOffer-imgContainer">
+                    <img src="images/stephen-phillips-hostreviews-co-uk-em37kS8WJJQ-unsplash.jpg"
+                        alt="credit cards image">
+                </div>
+                <div class="topOffers-captionContainer">
+                    <p>Marriott Bonvoy<sup>TM</sup> Credit Cards</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+            <div class="topOffers-Container">
+                <div class="topOffer-imgContainer">
+                    <img src="images/neonbrand-mGZX2MOPR-s-unsplash.jpg" alt="image">
+                </div>
+                <div class="topOffers-captionContainer">
+                    <p>Book A Home And Earn 2x Points</p>
+                    <a href="">Escape this spring</a>
+                </div>
+            </div>
+            <div class="topOffers-Container">
+                <div class="topOffer-imgContainer">
+                    <img src="images/esther-tuttle-fGnCky8Ldoc-unsplash.jpg" alt="image">
+                </div>
+                <div class="topOffers-captionContainer">
+                    <p>Complimentary testing for your trip</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+            <div class="topOffers-Container">
+                <div class="topOffer-imgContainer">
+                    <img src="images/edvin-johansson-rlwE8f8anOc-unsplash.jpg" alt="image">
+                </div>
+                <div class="topOffers-captionContainer">
+                    <p>Take their stay to the next level.</p>
+                    <a href="">Purchase A Gift Card</a>
+                </div>
+            </div>
+            <div class="topOffers-Container">
+                <div class="topOffer-imgContainer large-imgContainer">
+                    <img src="images/glenn-tan-7F0wuB3WVUg-unsplash(M).jpg" alt="image">
+                </div>
+                <div class="topOffers-captionContainer">
+                    <p>When it's time for you, we'll be ready</p>
+                    <a href="">Let's Go There</a>
+                </div>
+            </div>
+            <div class="topOffers-Container">
+                <div class="topOffer-imgContainer large-imgContainer">
+                    <img src="images/vojtech-bruzek-Yrxr3bsPdS0-unsplash(M).jpg" alt="image">
+                </div>
+                <div class="topOffers-captionContainer">
+                    <p>Room for the entire family. Find the perfect vacation home in 200+ global destinations</p>
+                    <a href="">Find A Home</a>
+                </div>
+            </div>
+            <div class="view-offers-Container">
+                <a href="">View All Offers</a>
+            </div>
+        </section>
+        <section class="adsWrapper">
+            <div class="marriott-app">
+                <div class="app-imgContainer">
+                    <img src="images/smartphone-ge01b639a5_1280.png" alt="image">
+                </div>
+                <div class="appAds-Content">
+                    <p>It's all right here with the Marriott Bonvoy<sup>TM</sup> App</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+            <div class="careerAds">
+                <div class="careerAds-imgContainer">
+                    <img src="images/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="image">
+                </div>
+                <div class="careerAds-Content">
+                    <p>Discover Career Opportunities</p>
+                    <p>EOE / Disability / Veteran</p>
+                    <a href="">Explore Jobs</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="topDestinationsWrapper">
+            <p>Top Destinations</p>
+            <!-- <ul>
+                <li><a href="">Anaheim Hotels</a></li>
+                <li><a href="">Atlanta Hotels</a></li>
+                <li><a href="">Baltimore Hotels</a></li>
+                <li><a href="">Boston Hotels</a></li>
+                <li><a href="">Cancun Hotels</a></li>
+                <li><a href="">Charlotte Hotels</a></li>
+                <li><a href="">Chicago Hotels</a></li>
+                <li><a href="">Costa Rica Hotels</a></li>
+                <li><a href="">Dallas Hotels</a></li>
+                <li><a href="">Las Vegas Hotels</a></li>
+                <li><a href="">London Hotels</a></li>
+                <li><a href="">Los Angeles Hotels</a></li>
+                <li><a href="">Memphis Hotels</a></li>
+                <li><a href="">Miami Hotels</a></li>
+                <li><a href="">Myrtle Beach Hotels</a></li>
+                <li><a href="">New York Hotels</a></li>
+                <li><a href="">Orlando Hotels</a></li>
+                <li><a href="">Paris Hotels</a></li>
+                <li><a href="">Philadelphia Hotels</a></li>
+                <li><a href="">San Francisco Hotels</a></li>
+                <li><a href="">St. Louis Hotels</a></li>
+                <li><a href="">Tampa Hotels</a></li>
+                <li><a href="">Thailand Hotels</a></li>
+                <li><a href="">Toronto Hotels</a></li>
+                <li><a href="">Washington Hotels</a></li>
+            </ul> -->
+        </div>
+        <div class="forGuestWrapper">
+            <p>For Guests</p>
+            <!-- <ul>
+                <li><a href="">Best Rate Guarantee</a></li>
+                <li><a href="">Marriott Bonvoy Moments</a></li>
+                <li><a href="">Activities</a></li>
+                <li><a href="">Marriott Insiders</a></li>
+                <li><a href="">Marriott Bonvoy Traveler</a></li>
+                <li><a href="">Travel Experiences</a></li>
+                <li><a href="">Travel Insurance</a></li>
+                <li><a href="">Shop Marriott</a></li>
+                <li><a href="">Shop Westin</a></li>
+                <li><a href="">Gift Cards</a></li>
+            </ul> -->
+        </div>
+        <div class="ourCompanyWrapper">
+            <p>Our Company</p>
+            <!-- <ul>
+                <li><a href="">About Marriott</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Travel Professionals</a></li>
+                <li><a href="">Group Partners</a></li>
+                <li><a href="">Developers</a></li>
+                <li><a href="">Affiliates</a></li>
+                <li><a href="">Investors</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Bill Marriott's Blog</a></li>
+                <li><a href="">Anthony Capuano's Blog</a></li>
+                <li><a href="">Heart of the House</a></li>
+            </ul> -->
+        </div>
+        <div class="socialMediaWrapper">
+            <p>Follow Us:</p>
+            <div>
+                <a href=""><img src="https://img.icons8.com/material/24/000000/facebook--v1.png" /></a>
+                <a href=""><img src="https://img.icons8.com/material/24/000000/instagram-new--v1.png" /></a>
+                <a href=""><img src="https://img.icons8.com/material/24/000000/twitter--v1.png" /></a>
+                <a href=""><img src="https://img.icons8.com/material/24/000000/facebook-messenger--v1.png" /></a>
+                <a href=""><img src="https://img.icons8.com/material/24/000000/youtube-play--v1.png" /></a>
+            </div>
+        </div>
+        <div class="copyRightWrapper">
+            <p>&#169 1996 - 2022 Marriott International, Inc. All rights reserved. Marriott Proprietary Information</p>
+        </div>
+        <div class="site-use-links">
+            <ul>
+                <li class="site-link"><a href="">Tracking Preferences</a></li>
+                <li class="site-link"><a href="">Careers</a></li>
+                <li class="site-link"><a href="">Terms of Use</a></li>
+                <li class="site-link"><a href="">Program Terms & Conditions</a></li>
+                <li class="site-link"><a href="">Privacy Center</a></li>
+                <li class="site-link"><a href="">Do Not Sell My Personal Information</a></li>
+                <li class="site-link"><a href="">Digital Accessibility</a></li>
+                <li class="site-link"><a href="">Site Map</a></li>
+                <li class="site-link"><a href="">Help</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="site.js"></script>
+</body>
+
+</html>
